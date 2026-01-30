@@ -225,7 +225,7 @@ export default function Sidebar({ isOpen, onClose }: Props) {
             </NavLink>
 
             <NavLink
-              to="/help"
+              to="/logout"
               className="flex items-center gap-3 text-sm px-4 py-3 rounded
               text-red-500 hover:bg-gray-100 transition-colors"
             >

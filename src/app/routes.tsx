@@ -25,7 +25,7 @@ import MyAccounts from "../pages/MyAccounts";
 import Performance from "../pages/Performance";
 import OrderHistory from "../pages/OrderHistory";
 import TradingTerminal from "../pages/TradingTerminal";
-
+import Logout from "../pages/auth/Logout";
 
 
 
@@ -67,7 +67,7 @@ export default function AppRoutes() {
         <Route path="/performance" element={<Performance />} />
         <Route path="/orders-history" element={<OrderHistory />} />
         <Route path="/trade" element={<TradingTerminal />} />
-
+        <Route path="/logout" element={<Logout />} />
 
         
 
