@@ -13,6 +13,7 @@ import {
   LogOut,
   MessageCircle,
   X,
+  LayoutDashboard,
 } from "lucide-react";
 
 type Props = {
@@ -137,6 +138,29 @@ export default function Sidebar({ isOpen, onClose }: Props) {
           <Wallet className="inline mr-3" size={16} />
           0.44 USD
         </div>
+
+          {/* dashboard button */}
+          <div className=" mt-4 space-y-2 ml-2">
+            <NavLink
+              to="/dashboard"
+              onClick={onClose}
+              className={({ isActive }) =>  `
+              flex items-center gap-3
+              px-4 py-2.5 rounded-md
+              text-sm font-500
+              transition-colors
+              ${
+                isActive
+                  ? "bg-yellow-400 text-black"
+                  : "text-gray-700 hover:bg-gray-100"
+              }
+              `
+            }
+          >
+              <LayoutDashboard size={16} className="text-gray-500" />
+              Dashboard
+            </NavLink>
+          </div>
 
 
         {/* Menu */}

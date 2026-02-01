@@ -68,7 +68,9 @@ export default function Navbar({ onMenuClick }: Props) {
         >
           <Menu size={20} />
         </button>
-
+      </div>
+      
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <Link
           to="/dashboard"
           className="flex items-center gap-2 hover:opacity-90 transition"
